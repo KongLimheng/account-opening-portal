@@ -20,6 +20,24 @@ body {
     margin: 0;
     min-height: 100vh;
 }
+
+.l-top {
+    /* width: 100%;
+    background-image: url('/images/top.png');
+    background-position: center center;
+    background-repeat: no-repeat; */
+    /* background-size: contain;
+    min-height: 100% !important; */
+}
+
+.l-bottom {
+    /* background-image: url('/images/bottom.png');
+    background-position: center center;
+    background-repeat: no-repeat; */
+    /* background-size: contain;
+    min-height: 100% !important; */
+}
+
 .acc-open-service {
     top: 14px;
 }
