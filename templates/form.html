@@ -1244,7 +1244,16 @@
                 console.log('file', $('#formFile')[0].files[0]);
                 $(this).prev('label').text(file);
                 $(this).prev('#imageName').text(file);
+
+                let reader = new FileReader();
+                reader.onload = function (event) {
+                    console.log(event.target.result);
+                    $('#imgPreview').attr('src', event.target.result);
+                    $('#imgPreview').removeClass("d-none");
+                };
+                reader.readAsDataURL($('#formFile')[0].files[0]);
             });
+
             // selector library global
             $('.js-selector').select2();
             // datepicker
