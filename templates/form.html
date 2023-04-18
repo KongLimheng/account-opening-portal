@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Customer Information Page</title>
+        <link rel="icon" type="image/x-icon" href="../images/cana-logo.png" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="../css/custom.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+        <!-- date picker -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/css/bootstrap-datepicker3.min.css">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>
+
+        <!-- select option -->
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+    </head>
+
+    <body class="form-background">
+        <div class="wrap-container" style="font-family: 'Eina01-Semibold'">
+            <div class=" d-flex justify-content-between align-items-center">
+                <div class="d-inline-flex">
+                    <!-- Arrow Icon -->
+                    <a href="/templates/scan-nid.html" class="me-4">
+                        <img src="/images/back-arrow.svg" alt="back" width="40">
+                    </a>
+
+                    <div class=" custom-text form-title">Review and Input <br> Additional Information</div>
+
+                </div>
+                <img class="canadia-logo" src="/images/cana-logo.png" alt="">
+            </div>
+
+            <hr>
+
+            <!-- start customer form -->
+            <div class="info-container">
+                <div class="mx-2 mb-2">
+                    <div class="form-section">Customer Information</div>
+                    <div class=" pt-1" style="color: #797979; font-size: 14px;">Please input following information to
+                        finish
+                        the
+                        process</div>
+                </div>
+
+                <div class="container-fluid px-0 text-center">
+                    <div class="row gx-5 mx-0">
+                        <div class="col-12 col-md-6   p-2">
+                            <div class="inputbox ">
+                                <svg class="position-absolute "
+                                    style="height: 32px; width: 32px; top: 10px; bottom: 0px; left: 0px; padding-left: 18px;"
+                                    viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.145 5.2801C12.145 6.27229 11.7334 7.22384 11.0006 7.92542C10.2679 8.627 9.27412 9.02115 8.23788 9.02115C7.20164 9.02115 6.20785 8.627 5.47512 7.92542C4.74239 7.22384 4.33074 6.27229 4.33074 5.2801C4.33074 4.28792 4.74239 3.33637 5.47512 2.63479C6.20785 1.93321 7.20164 1.53906 8.23788 1.53906C9.27412 1.53906 10.2679 1.93321 11.0006 2.63479C11.7334 3.33637 12.145 4.28792 12.145 5.2801ZM8.23788 11.8269C6.42446 11.8269 4.68532 12.5167 3.40304 13.7444C2.12077 14.9722 1.40039 16.6374 1.40039 18.3738H15.0754C15.0754 16.6374 14.355 14.9722 13.0727 13.7444C11.7904 12.5167 10.0513 11.8269 8.23788 11.8269Z"
+                                        stroke="url(#paint0_radial_213_375)" stroke-width="1.8" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_213_375" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(12.0534 6.72976) rotate(25.9776) scale(11.8504 21.6498)">
+                                            <stop stop-color="#121B67" />
+                                            <stop offset="0.635422" stop-color="#ED4055" />
+                                            <stop offset="0.96845" stop-color="#EDD62C" />
+                                            <stop offset="0.96855" stop-color="#EDDA2B" />
+                                            <stop offset="0.96865" stop-color="#EDDE2A" />
+                                            <stop offset="0.96875" stop-color="#EDE229" />
+                                            <stop offset="0.9992" stop-color="#615E11" />
+                                            <stop offset="0.9993" stop-color="#EDE927" />
+                                            <stop offset="0.9994" stop-color="#EDEB27" />
+                                            <stop offset="0.9995" stop-color="#EDEC26" />
+                                            <stop offset="0.9996" stop-color="#EDEE26" />
+                                            <stop offset="0.9997" stop-color="#EDF224" />
+                                            <stop offset="0.9998" stop-color="#EDF623" />
+                                            <stop offset="0.9999" stop-color="#EDFB22" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+
+                                <input style="border: none;" class="input" type="text" required />
+                                <label class="">Name
+                                    <div class="d-inline-flex " style="color: #921d1d;  ">*</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="  col-12 col-md-6   p-2">
+                            <div class="inputbox  " style=" border: 1px solid #797979; ">
+                                <svg class="position-absolute "
+                                    style="height: 15px;   top: 18px; bottom: 0px; left: 0px; padding-left: 18px;"
+                                    viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.0833 0H1.91667C0.872083 0.0377778 0.0383333 0.859444 0 1.88889V15.1111C0.0383333 16.1406 0.872083 16.9622 1.91667 17H21.0833C22.1279 16.9622 22.9617 16.1406 23 15.1111V1.88889C22.9617 0.859444 22.1279 0.0377778 21.0833 0ZM21.0833 15.1111H1.91667V1.88889H21.0833V15.1111ZM13.4167 13.2222V12.0417C13.4167 10.4739 10.2158 9.68056 8.625 9.68056C7.03417 9.68056 3.83333 10.4739 3.83333 12.0417V13.2222H13.4167ZM8.625 3.77778C7.98959 3.77778 7.3802 4.02654 6.93089 4.46933C6.48158 4.91213 6.22917 5.51268 6.22917 6.13889C6.22917 6.44895 6.29114 6.75598 6.41154 7.04245C6.53194 7.32891 6.70842 7.5892 6.93089 7.80845C7.3802 8.25124 7.98959 8.5 8.625 8.5C8.93962 8.5 9.25117 8.43893 9.54185 8.32027C9.83252 8.20161 10.0966 8.0277 10.3191 7.80845C10.5416 7.5892 10.7181 7.32891 10.8385 7.04245C10.9589 6.75598 11.0208 6.44895 11.0208 6.13889C11.0208 5.82882 10.9589 5.52179 10.8385 5.23533C10.7181 4.94887 10.5416 4.68858 10.3191 4.46933C10.0966 4.25008 9.83252 4.07616 9.54185 3.95751C9.25117 3.83885 8.93962 3.77778 8.625 3.77778ZM13.4167 3.77778V4.72222H19.1667V3.77778H13.4167ZM13.4167 5.66667V6.61111H19.1667V5.66667H13.4167ZM13.4167 7.55556V8.5H17.25V7.55556H13.4167Z"
+                                        fill="url(#paint0_radial_366_71)" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_366_71" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(17.9174 5.24167) rotate(16.3066) scale(18.6684 23.3412)">
+                                            <stop stop-color="#121B67" />
+                                            <stop offset="0.635422" stop-color="#ED4055" />
+                                            <stop offset="0.96845" stop-color="#EDD62C" />
+                                            <stop offset="0.96855" stop-color="#EDDA2B" />
+                                            <stop offset="0.96865" stop-color="#EDDE2A" />
+                                            <stop offset="0.96875" stop-color="#EDE229" />
+                                            <stop offset="0.9992" stop-color="#615E11" />
+                                            <stop offset="0.9993" stop-color="#EDE927" />
+                                            <stop offset="0.9994" stop-color="#EDEB27" />
+                                            <stop offset="0.9995" stop-color="#EDEC26" />
+                                            <stop offset="0.9996" stop-color="#EDEE26" />
+                                            <stop offset="0.9997" stop-color="#EDF224" />
+                                            <stop offset="0.9998" stop-color="#EDF623" />
+                                            <stop offset="0.9999" stop-color="#EDFB22" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+
+                                <input style="border: none;" class="input" type="text" required />
+                                <label>Nationality
+                                    <div class="d-inline-flex" style="color: #921d1d">*</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="  col-12 col-md-6   p-2">
+                            <div class="inputbox  " style=" border: 1px solid #797979; ">
+
+                                <svg class="position-absolute "
+                                    style="height: 18px;  top: 18px; bottom: 0px; left: 0px; padding-left: 18px;"
+                                    viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.5 7.6C10.3889 7.6 11.3333 9.899 10.0017 11.248C8.66056 12.597 6.375 11.6375 6.375 9.7375C6.375 8.55 7.31944 7.6 8.5 7.6ZM12.75 16.15H4.25V15.086C4.25 13.8985 6.13889 12.9485 8.5 12.9485C10.8611 12.9485 12.75 13.8985 12.75 15.086M15.1111 17.1H1.88889V6.65H15.1111M12.2778 0V1.9H4.72222V0H2.83333V1.9H1.88889C0.85 1.9 0 2.755 0 3.8V17.1C0 18.1545 0.85 19 1.88889 19H15.1111C16.1594 19 17 18.1545 17 17.1V3.8C17 2.755 16.1594 1.9 15.1111 1.9H14.1667V0H12.2778Z"
+                                        fill="url(#paint0_radial_434_85)" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_434_85" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.2433 5.85833) rotate(23.8628) scale(14.4812 24.8572)">
+                                            <stop stop-color="#121B67" />
+                                            <stop offset="0.635422" stop-color="#ED4055" />
+                                            <stop offset="0.96845" stop-color="#EDD62C" />
+                                            <stop offset="0.96855" stop-color="#EDDA2B" />
+                                            <stop offset="0.96865" stop-color="#EDDE2A" />
+                                            <stop offset="0.96875" stop-color="#EDE229" />
+                                            <stop offset="0.9992" stop-color="#615E11" />
+                                            <stop offset="0.9993" stop-color="#EDE927" />
+                                            <stop offset="0.9994" stop-color="#EDEB27" />
+                                            <stop offset="0.9995" stop-color="#EDEC26" />
+                                            <stop offset="0.9996" stop-color="#EDEE26" />
+                                            <stop offset="0.9997" stop-color="#EDF224" />
+                                            <stop offset="0.9998" stop-color="#EDF623" />
+                                            <stop offset="0.9999" stop-color="#EDFB22" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+
+                                <input style="border: none;" type='text' id='datepicker' class="input" required />
+                                <label>Date of Birth
+                                    <div class="d-inline-flex" style="color: #921d1d">*</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="  col-12 col-md-6   p-2 ">
+                            <div class="gender-label">Gender
+                                <div class="d-inline-flex" style="color: #921d1d">*</div>
+                            </div>
+                            <div class="button-box d-flex justify-content-between">
+
+                                <button onclick="maleClick()" type="button" id="male-btn" class="toggle-btn active">
+                                    <span class="pe-1">
+                                    </span> Male</button>
+                                <button onclick="femaleClick()" type="button" id="female-btn" class="toggle-btn"> <span
+                                        class="pe-1">
+
+
+                                    </span> Female</button>
+                            </div>
+                        </div>
+
+                        <div class="  col-12     p-2">
+                            <div class="inputbox  " style=" border: 1px solid #797979; ">
+                                <svg class="position-absolute "
+                                    style="height: 18px;  top: 18px; bottom: 0px; left: 0px; padding-left: 18px;"
+                                    viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.330078 1.83342C0.330078 1.55437 0.442637 1.28674 0.642993 1.08942C0.843349 0.892103 1.11509 0.78125 1.39844 0.78125H3.69861C3.9515 0.781365 4.19614 0.869822 4.38903 1.03089C4.58192 1.19195 4.71054 1.41518 4.75201 1.66086L5.5426 6.32723C5.58037 6.54946 5.54471 6.77777 5.44085 6.97855C5.33699 7.17933 5.17043 7.34197 4.96568 7.44253L3.31187 8.25585C3.90492 9.70327 4.78816 11.0181 5.9088 12.1218C7.02945 13.2254 8.3645 14.0953 9.83419 14.6793L10.6611 13.0506C10.7632 12.8491 10.9281 12.6852 11.1318 12.583C11.3354 12.4807 11.567 12.4454 11.7925 12.4824L16.5307 13.261C16.7801 13.3019 17.0068 13.4285 17.1703 13.6185C17.3339 13.8085 17.4237 14.0494 17.4238 14.2985V16.5638C17.4238 16.8428 17.3112 17.1104 17.1109 17.3078C16.9105 17.5051 16.6388 17.6159 16.3554 17.6159H14.2187C6.54792 17.6159 0.330078 11.4923 0.330078 3.93775V1.83342Z"
+                                        fill="url(#paint0_radial_213_388)" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_213_388" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.6464 5.97195) rotate(21.2958) scale(14.2922 22.4386)">
+                                            <stop stop-color="#121B67" />
+                                            <stop offset="0.635422" stop-color="#ED4055" />
+                                            <stop offset="0.96845" stop-color="#EDD62C" />
+                                            <stop offset="0.96855" stop-color="#EDDA2B" />
+                                            <stop offset="0.96865" stop-color="#EDDE2A" />
+                                            <stop offset="0.96875" stop-color="#EDE229" />
+                                            <stop offset="0.9992" stop-color="#615E11" />
+                                            <stop offset="0.9993" stop-color="#EDE927" />
+                                            <stop offset="0.9994" stop-color="#EDEB27" />
+                                            <stop offset="0.9995" stop-color="#EDEC26" />
+                                            <stop offset="0.9996" stop-color="#EDEE26" />
+                                            <stop offset="0.9997" stop-color="#EDF224" />
+                                            <stop offset="0.9998" stop-color="#EDF623" />
+                                            <stop offset="0.9999" stop-color="#EDFB22" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                            <stop offset="1" stop-color="#EDFF21" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+
+
+                                <input style="border: none;" class="input" type="text" required />
+                                <label>Phone Number
+                                    <div class="d-inline-flex" style="color: #921d1d">*</div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mx-2 mt-4">
+                    <div class="  form-section ">Account Setup</div>
+                    <div class=" pt-1" style="color: #797979; font-size: 14px;">
+                        Please input following information to
+                        finish
+                        the
+                        process</div>
+                </div>
+
+                <div class="acc-container">
+                    <!-- input field: Account Types -->
+                    <div class=" container-fluid ">
+                        <div class=" row">
+                            <div class="col-10 col-sm-11 p-2">
+                                <div class="inputbox bg-white mt-3 d-flex align-items-center "
+                                    style=" border: 1px solid #797979; ">
+
+                                    <svg class="position-absolute "
+                                        style="height: 15px; top: 19px; bottom: 0px; left: 0px; padding-left: 18px;"
+                                        viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.6629 7.56981C16.6629 8.0163 16.855 8.44449 17.1969 8.76021C17.5389 9.07592 18.0027 9.25328 18.4862 9.25328V12.6202C18.4862 13.0667 18.2941 13.4949 17.9522 13.8106C17.6103 14.1263 17.1465 14.3037 16.6629 14.3037H2.07626C1.59268 14.3037 1.12891 14.1263 0.786971 13.8106C0.44503 13.4949 0.25293 13.0667 0.25293 12.6202V9.25328C1.26488 9.25328 2.07626 8.49572 2.07626 7.56981C2.07626 7.12333 1.88416 6.69513 1.54222 6.37942C1.20028 6.06371 0.736507 5.88634 0.25293 5.88634V2.51941C0.25293 1.58508 1.07343 0.835938 2.07626 0.835938H16.6629C17.1465 0.835938 17.6103 1.0133 17.9522 1.32901C18.2941 1.64473 18.4862 2.07292 18.4862 2.51941V5.88634C18.0027 5.88634 17.5389 6.06371 17.1969 6.37942C16.855 6.69513 16.6629 7.12333 16.6629 7.56981ZM13.4721 11.1472C13.4721 9.88458 10.7371 9.25328 9.36958 9.25328C8.00208 9.25328 5.26709 9.88458 5.26709 11.1472V11.7785H13.4721V11.1472ZM9.36958 7.78025C9.91361 7.78025 10.4353 7.58071 10.82 7.22554C11.2047 6.87036 11.4208 6.38864 11.4208 5.88634C11.4208 5.38405 11.2047 4.90233 10.82 4.54715C10.4353 4.19198 9.91361 3.99244 9.36958 3.99244C8.82556 3.99244 8.30382 4.19198 7.91913 4.54715C7.53445 4.90233 7.31834 5.38405 7.31834 5.88634C7.31834 6.38864 7.53445 6.87036 7.91913 7.22554C8.30382 7.58071 8.82556 7.78025 9.36958 7.78025Z"
+                                            fill="url(#paint0_radial_213_448)" />
+                                        <defs>
+                                            <radialGradient id="paint0_radial_213_448" cx="0" cy="0" r="1"
+                                                gradientUnits="userSpaceOnUse"
+                                                gradientTransform="translate(14.457 4.98849) rotate(16.2963) scale(14.7986 18.4924)">
+                                                <stop stop-color="#121B67" />
+                                                <stop offset="0.635422" stop-color="#ED4055" />
+                                                <stop offset="0.96845" stop-color="#EDD62C" />
+                                                <stop offset="0.96855" stop-color="#EDDA2B" />
+                                                <stop offset="0.96865" stop-color="#EDDE2A" />
+                                                <stop offset="0.96875" stop-color="#EDE229" />
+                                                <stop offset="0.9992" stop-color="#615E11" />
+                                                <stop offset="0.9993" stop-color="#EDE927" />
+                                                <stop offset="0.9994" stop-color="#EDEB27" />
+                                                <stop offset="0.9995" stop-color="#EDEC26" />
+                                                <stop offset="0.9996" stop-color="#EDEE26" />
+                                                <stop offset="0.9997" stop-color="#EDF224" />
+                                                <stop offset="0.9998" stop-color="#EDF623" />
+                                                <stop offset="0.9999" stop-color="#EDFB22" />
+                                                <stop offset="1" stop-color="#EDFF21" />
+                                                <stop offset="1" stop-color="#EDFF21" />
+                                                <stop offset="1" stop-color="#EDFF21" />
+                                                <stop offset="1" stop-color="#EDFF21" />
+                                                <stop offset="1" stop-color="#EDFF21" />
+                                                <stop offset="1" stop-color="#EDFF21" />
+                                            </radialGradient>
+                                        </defs>
+                                    </svg>
+
+                                    <select style="border: none; height: 100%;  width: 80%;" class="input js-selector">
+                                        <!-- <option selected>Account Types</option> -->
+                                        <option value="Saving Account">Saving Account</option>
+                                        <option value="Current Account">Current Account</option>
+                                        <option value="RGC Payroll Account">RGC Payroll Account</option>
+                                        <option value="Elite Account">Elite Account</option>
+                                    </select>
+                                    <label>Account Types
+                                        <div class="d-inline-flex" style="color: #921d1d">*</div>
+                                    </label>
+
+                                    <div class=" d-flex" style="  border-left: 1px solid #797979;  ">
+                                        <select class="js-selector"
+                                            style=" width: 100%;  outline: none;  height: 30px;    border-left: 1px solid #797979 !important;  ">
+                                            <option value="USD" selected>USD</option>
+                                            <option value="KHR">KHR</option>
+                                        </select>
+                                    </div>
+
+                                    <img src="/images/arrow-down.svg" alt="down" class="ms-4 mt-1 arrow-down">
+                                </div>
+                            </div>
+                            <div class="col-2 col-sm-1 p-2  mt-2 d-flex justify-content-end">
+                                <img src="/images/plus.svg" id="add-acc" alt="plus" width="30"
+                                    style="margin-top: 10px; cursor: pointer;">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class=" container-fluid">
+                        <div class=" row">
+                            <div class="col-10 col-sm-11 p-2">
+                                <div class="inputbox bg-white mt-3 d-flex align-items-center "
+                                    style=" border: 1px solid #797979; ">
+                                    <svg class="position-absolute "
+                                        style="height: 15px; top: 19px; bottom: 0px; left: 0px; padding-left: 18px;"
+                                        viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.6629 7.56981C16.6629 8.0163 16.855 8.44449 17.1969 8.76021C17.5389 9.07592 18.0027 9.25328 18.4862 9.25328V12.6202C18.4862 13.0667 18.2941 13.4949 17.9522 13.8106C17.6103 14.1263 17.1465 14.3037 16.6629 14.3037H2.07626C1.59268 14.3037 1.12891 14.1263 0.786971 13.8106C0.44503 13.4949 0.25293 13.0667 0.25293 12.6202V9.25328C1.26488 9.25328 2.07626 8.49572 2.07626 7.56981C2.07626 7.12333 1.88416 6.69513 1.54222 6.37942C1.20028 6.06371 0.736507 5.88634 0.25293 5.88634V2.51941C0.25293 1.58508 1.07343 0.835938 2.07626 0.835938H16.6629C17.1465 0.835938 17.6103 1.0133 17.9522 1.32901C18.2941 1.64473 18.4862 2.07292 18.4862 2.51941V5.88634C18.0027 5.88634 17.5389 6.06371 17.1969 6.37942C16.855 6.69513 16.6629 7.12333 16.6629 7.56981ZM13.4721 11.1472C13.4721 9.88458 10.7371 9.25328 9.36958 9.25328C8.00208 9.25328 5.26709 9.88458 5.26709 11.1472V11.7785H13.4721V11.1472ZM9.36958 7.78025C9.91361 7.78025 10.4353 7.58071 10.82 7.22554C11.2047 6.87036 11.4208 6.38864 11.4208 5.88634C11.4208 5.38405 11.2047 4.90233 10.82 4.54715C10.4353 4.19198 9.91361 3.99244 9.36958 3.99244C8.82556 3.99244 8.30382 4.19198 7.91913 4.54715C7.53445 4.90233 7.31834 5.38405 7.31834 5.88634C7.31834 6.38864 7.53445 6.87036 7.91913 7.22554C8.30382 7.58071 8.82556 7.78025 9.36958 7.78025Z"
+                                            fill="url(#paint0_radial_213_448)" />
+                                        <defs>
+                                            <radialGradient id="paint0_radial_213_448" cx="0" cy="0" r="1"
+                                                gradientUnits="userSpaceOnUse"
+                                                gradientTransform="translate(14.457 4.98849) rotate(16.2963) scale(14.7986 18.4924)">
+                                                <stop stop-color="#121B67" />
+                                                <stop offset="0.635422" stop-color="#ED4055" />
+                                                <stop offset="0.96845" stop-color="#EDD62C" />
+                                                <stop offset="0.96855" stop-color="#EDDA2B" />
+                                                <stop offset="0.96865" stop-color="#EDDE2A" />
+                                                <stop offset="0.96875" stop-color="#EDE229" />
+                                                <stop offset="0.9992" stop-color="#615E11" />
+                                                <stop offset="0.9993" stop-color="#EDE927" />
+                                                <stop offset="0.9994" stop-color="#EDEB27" />
+                                                <stop offset="0.9995" stop-color="#EDEC26" />
+                                                <stop offset="0.9996" stop-color="#EDEE26" />
+                                                <stop offset="0.9997" stop-color="#EDF224" />
+                                                <stop offset="0.9998" stop-color="#EDF623" />
+                                                <stop offset="0.9999" stop-color="#EDFB22" />
+                                                <stop offset="1" stop-color="#EDFF21" />
+                                                <stop offset="1" stop-color="#EDFF21" />
+                                                <stop offset="1" stop-color="#EDFF21" />
+                                                <stop offset="1" stop-color="#EDFF21" />
+                                                <stop offset="1" stop-color="#EDFF21" />
+                                                <stop offset="1" stop-color="#EDFF21" />
+                                            </radialGradient>
+                                        </defs>
+                                    </svg>
+                                    <select style="border: none; height: 100%;  width: 80%;"
+                                        class="input js-selector   ">
+                                        <option value="Saving Account">Saving Account</option>
+                                        <option value="Current Account">Current Account</option>
+                                        <option value="RGC Payroll Account">RGC Payroll Account</option>
+                                        <option value="Elite Account">Elite Account</option>
+                                    </select>
+                                    <label>Account Types
+                                        <div class="d-inline-flex" style="color: #921d1d">*</div>
+                                    </label>
+
+                                    <div class=" d-flex" style="  border-left: 1px solid #797979;  ">
+                                        <select class=" js-selector "
+                                            style=" width: 100%;  outline: none;  height: 30px;    border-left: 1px solid #797979 !important;  ">
+                                            <option value="USD" selected>USD</option>
+                                            <option value="KHR">KHR</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-2 col-sm-1 p-2 mt-2 d-flex justify-content-end">
+                                <img src="/images/minus.svg" id="remove-acc" alt="minus" width="35"
+                                    style="margin-top: 10px">
+                            </div>
+                        </div> -->
+                </div>
+
+                <div class=" container-fluid px-0">
+                    <div class="row">
+                        <div class="col-12  ">
+                            <!-- Debit Card Checkbox -->
+                            <div class=" d-flex align-items-center mt-4 mx-2">
+                                <!-- checkbox -->
+                                <label class="check-container d-flex align-items-center">
+                                    <input type="checkbox" id="checkDebitCard">
+                                    <div class="checkmark"></div>
+                                    <label for="checkDebitCard" class="mx-3 fs-6">Debit Card</label>
+                                </label>
+
+                                <hr style="flex-grow: 1">
+                            </div>
+
+                            <!-- debit card form -->
+                            <div class="input-items mt-2 container-fluid px-0">
+                                <div class=" row gx-5 mx-0">
+                                    <div class="col-12 col-md-6 p-2">
+                                        <!-- Types of Card -->
+                                        <div class="inputbox bg-white d-flex align-items-center "
+                                            style=" border: 1px solid #797979; ">
+
+                                            <svg class="position-absolute"
+                                                style="height: 15px; top: 19px; bottom: 0px; left: 0px; padding-left: 18px;"
+                                                viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.1 3.75H1.9V1.875H17.1M17.1 13.125H1.9V7.5H17.1M17.1 0H1.9C0.8455 0 0 0.834375 0 1.875V13.125C0 13.6223 0.200178 14.0992 0.556497 14.4508C0.912816 14.8025 1.39609 15 1.9 15H17.1C17.6039 15 18.0872 14.8025 18.4435 14.4508C18.7998 14.0992 19 13.6223 19 13.125V1.875C19 0.834375 18.145 0 17.1 0Z"
+                                                    fill="url(#paint0_radial_676_99)" />
+                                                <defs>
+                                                    <radialGradient id="paint0_radial_676_99" cx="0" cy="0" r="1"
+                                                        gradientUnits="userSpaceOnUse"
+                                                        gradientTransform="translate(14.8013 4.625) rotate(17.3525) scale(15.5071 20.4818)">
+                                                        <stop stop-color="#121B67" />
+                                                        <stop offset="0.635422" stop-color="#ED4055" />
+                                                        <stop offset="0.96845" stop-color="#EDD62C" />
+                                                        <stop offset="0.96855" stop-color="#EDDA2B" />
+                                                        <stop offset="0.96865" stop-color="#EDDE2A" />
+                                                        <stop offset="0.96875" stop-color="#EDE229" />
+                                                        <stop offset="0.9992" stop-color="#615E11" />
+                                                        <stop offset="0.9993" stop-color="#EDE927" />
+                                                        <stop offset="0.9994" stop-color="#EDEB27" />
+                                                        <stop offset="0.9995" stop-color="#EDEC26" />
+                                                        <stop offset="0.9996" stop-color="#EDEE26" />
+                                                        <stop offset="0.9997" stop-color="#EDF224" />
+                                                        <stop offset="0.9998" stop-color="#EDF623" />
+                                                        <stop offset="0.9999" stop-color="#EDFB22" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                    </radialGradient>
+                                                </defs>
+                                            </svg>
+
+                                            <select style="border: none; height: 100%; width: 80%;"
+                                                class="input js-selector">
+                                                <option value="Visa">Visa</option>
+                                                <option value="UPI ">UPI</option>
+                                                <option value="ATM">ATM </option>
+                                            </select>
+                                            <label> Types of Card
+                                                <div class="d-inline-flex required-d-card" style="color: #921d1d">*
+                                                </div>
+                                            </label>
+                                            <img src="/images/arrow-down.svg" alt="down" class="arrow-down me-4">
+
+
+                                            <div class=" d-flex" style="border-left: 1px solid #797979;">
+                                                <img src="/images/arrow-down.svg" alt="down" class="arrow-down ms-4">
+                                                <select class="js-selector"
+                                                    style=" border: none; outline: none; height: 30px; width: 100%; border-left: 1px solid #797979 !important;">
+                                                    <option value="normal">Normal</option>
+                                                    <option value="vip">VIP</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-12 col-md-6  p-2">
+                                        <!-- Fee Charge-->
+                                        <div class="inputbox bg-white d-flex align-items-center justify-content-between"
+                                            style=" border: 1px solid #797979; ">
+                                            <svg class="position-absolute "
+                                                style="height: 15px; top: 19px; bottom: 0px; left: 0px; padding-left: 18px;"
+                                                viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M16.6629 7.56981C16.6629 8.0163 16.855 8.44449 17.1969 8.76021C17.5389 9.07592 18.0027 9.25328 18.4862 9.25328V12.6202C18.4862 13.0667 18.2941 13.4949 17.9522 13.8106C17.6103 14.1263 17.1465 14.3037 16.6629 14.3037H2.07626C1.59268 14.3037 1.12891 14.1263 0.786971 13.8106C0.44503 13.4949 0.25293 13.0667 0.25293 12.6202V9.25328C1.26488 9.25328 2.07626 8.49572 2.07626 7.56981C2.07626 7.12333 1.88416 6.69513 1.54222 6.37942C1.20028 6.06371 0.736507 5.88634 0.25293 5.88634V2.51941C0.25293 1.58508 1.07343 0.835938 2.07626 0.835938H16.6629C17.1465 0.835938 17.6103 1.0133 17.9522 1.32901C18.2941 1.64473 18.4862 2.07292 18.4862 2.51941V5.88634C18.0027 5.88634 17.5389 6.06371 17.1969 6.37942C16.855 6.69513 16.6629 7.12333 16.6629 7.56981ZM13.4721 11.1472C13.4721 9.88458 10.7371 9.25328 9.36958 9.25328C8.00208 9.25328 5.26709 9.88458 5.26709 11.1472V11.7785H13.4721V11.1472ZM9.36958 7.78025C9.91361 7.78025 10.4353 7.58071 10.82 7.22554C11.2047 6.87036 11.4208 6.38864 11.4208 5.88634C11.4208 5.38405 11.2047 4.90233 10.82 4.54715C10.4353 4.19198 9.91361 3.99244 9.36958 3.99244C8.82556 3.99244 8.30382 4.19198 7.91913 4.54715C7.53445 4.90233 7.31834 5.38405 7.31834 5.88634C7.31834 6.38864 7.53445 6.87036 7.91913 7.22554C8.30382 7.58071 8.82556 7.78025 9.36958 7.78025Z"
+                                                    fill="url(#paint0_radial_213_448)" />
+                                                <defs>
+                                                    <radialGradient id="paint0_radial_213_448" cx="0" cy="0" r="1"
+                                                        gradientUnits="userSpaceOnUse"
+                                                        gradientTransform="translate(14.457 4.98849) rotate(16.2963) scale(14.7986 18.4924)">
+                                                        <stop stop-color="#121B67" />
+                                                        <stop offset="0.635422" stop-color="#ED4055" />
+                                                        <stop offset="0.96845" stop-color="#EDD62C" />
+                                                        <stop offset="0.96855" stop-color="#EDDA2B" />
+                                                        <stop offset="0.96865" stop-color="#EDDE2A" />
+                                                        <stop offset="0.96875" stop-color="#EDE229" />
+                                                        <stop offset="0.9992" stop-color="#615E11" />
+                                                        <stop offset="0.9993" stop-color="#EDE927" />
+                                                        <stop offset="0.9994" stop-color="#EDEB27" />
+                                                        <stop offset="0.9995" stop-color="#EDEC26" />
+                                                        <stop offset="0.9996" stop-color="#EDEE26" />
+                                                        <stop offset="0.9997" stop-color="#EDF224" />
+                                                        <stop offset="0.9998" stop-color="#EDF623" />
+                                                        <stop offset="0.9999" stop-color="#EDFB22" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                    </radialGradient>
+                                                </defs>
+                                            </svg>
+                                            <select class="input js-selector  "
+                                                style="border: none;  height: 100%;  width: 80%;" required>
+                                                <option value="monthly">Monthly</option>
+                                                <option value="yearly">Yearly</option>
+                                            </select>
+                                            <label>Fee Charge
+                                                <div class="d-inline-flex required-d-card" style="color: #921d1d">*
+                                                </div>
+                                            </label>
+
+                                            <img src="/images/arrow-down.svg" alt="down" class="arrow-down me-4">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6   p-2">
+                                        <!-- pick branch -->
+                                        <div class="inputbox bg-white d-flex align-items-center justify-content-between"
+                                            style="border: 1px solid #797979;">
+                                            <svg class=" position-absolute"
+                                                style="height: 15px; top: 19px; bottom: 0px; left: 0px; padding: 0 18px;"
+                                                viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.5819 16.7671V2.80051C15.5819 2.33749 15.3951 1.89343 15.0626 1.56603C14.7302 1.23862 14.2793 1.05469 13.8092 1.05469H4.94576C4.47561 1.05469 4.02472 1.23862 3.69228 1.56603C3.35984 1.89343 3.17307 2.33749 3.17307 2.80051V16.7671M15.5819 16.7671H17.3545M15.5819 16.7671H11.1501M3.17307 16.7671H1.40039M3.17307 16.7671H7.60478M11.1501 16.7671V12.4025C11.1501 12.171 11.0568 11.949 10.8905 11.7853C10.7243 11.6216 10.4989 11.5296 10.2638 11.5296H8.49112C8.25605 11.5296 8.0306 11.6216 7.86438 11.7853C7.69816 11.949 7.60478 12.171 7.60478 12.4025V16.7671M11.1501 16.7671H7.60478M6.71844 4.54633H7.60478M6.71844 8.03797H7.60478M11.1501 4.54633H12.0365M11.1501 8.03797H12.0365"
+                                                    stroke="url(#paint0_radial_213_405)" stroke-width="1.8"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <defs>
+                                                    <radialGradient id="paint0_radial_213_405" cx="0" cy="0" r="1"
+                                                        gradientUnits="userSpaceOnUse"
+                                                        gradientTransform="translate(13.829 5.89934) rotate(21.2958) scale(13.3394 20.9427)">
+                                                        <stop stop-color="#121B67" />
+                                                        <stop offset="0.635422" stop-color="#ED4055" />
+                                                        <stop offset="0.96845" stop-color="#EDD62C" />
+                                                        <stop offset="0.96855" stop-color="#EDDA2B" />
+                                                        <stop offset="0.96865" stop-color="#EDDE2A" />
+                                                        <stop offset="0.96875" stop-color="#EDE229" />
+                                                        <stop offset="0.9992" stop-color="#615E11" />
+                                                        <stop offset="0.9993" stop-color="#EDE927" />
+                                                        <stop offset="0.9994" stop-color="#EDEB27" />
+                                                        <stop offset="0.9995" stop-color="#EDEC26" />
+                                                        <stop offset="0.9996" stop-color="#EDEE26" />
+                                                        <stop offset="0.9997" stop-color="#EDF224" />
+                                                        <stop offset="0.9998" stop-color="#EDF623" />
+                                                        <stop offset="0.9999" stop-color="#EDFB22" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                    </radialGradient>
+                                                </defs>
+                                            </svg>
+                                            <select class="input js-selector  "
+                                                style="border: none; height: 100%;  width: 80%;" required>
+
+                                                <option value="ho">Main Branch</option>
+                                                <option value="opb">Olympic</option>
+                                                <option value="svb">Sihanouk Ville</option>
+                                                <option value="bbb">Battambang</option>
+                                                <option value="kcb">Kampong Cham</option>
+                                                <option value="cgb">Charles De Gaulle</option>
+                                                <option value="plb">Pailin</option>
+                                                <option value="srb">Siem Reap "SKY"</option>
+                                                <option value="ppb">Poi Pet</option>
+                                                <option value="kpb">Kampot</option>
+                                                <option value="ssb">Sorya</option>
+                                                <option value="ptb">Banteay Meanchey</option>
+                                                <option value="pct">Pochentong</option>
+                                                <option value="tmb">Takhmao</option>
+                                                <option value="khb">Kampong Chhnang</option>
+                                                <option value="nlb">Neak Loeung</option>
+                                                <option value="scb">Stat Chas</option>
+                                                <option value="svc">Sovanna</option>
+                                                <option value="srl">Siem Reap "Phsar Leu"</option>
+                                                <option value="ktb">Kbal Thnal</option>
+                                                <option value="clb">Chenla</option>
+                                                <option value="hlb">Phsar Heng Ly</option>
+                                                <option value="tkb">Tuol Kork</option>
+                                                <option value="psb">Pursat</option>
+                                                <option value="skb">Suon Ousahakam</option>
+                                                <option value="cab">Chbar Ampov</option>
+                                                <option value="tab">Takeo</option>
+                                                <option value="trb">Kratie</option>
+                                                <option value="sub">Suong</option>
+                                                <option value="mmb">Memut</option>
+                                                <option value="tlb">Thmor Kol</option>
+                                                <option value="snb">Skun</option>
+                                                <option value="bvb">Bavet</option>
+                                                <option value="mrb">Maung Russey</option>
+                                                <option value="kb">Kambol</option>
+                                                <option value="kbb">Kampong Thom</option>
+                                                <option value="kkb">Koh Kong</option>
+                                                <option value="stb">Stung Treng</option>
+                                                <option value="ksb">Kampong Speu</option>
+                                                <option value="rkb">Ratanakiri</option>
+                                                <option value="smb">Santhor mok</option>
+                                                <option value="tpb">Bokor</option>
+                                                <option value="ttb">Tuol Tumpoung</option>
+                                                <option value="veb">Vimean Ekareach</option>
+                                                <option value="crb">Chak Angre</option>
+                                                <option value="pnb">Prey Nup</option>
+                                                <option value="tth">Toek Thla</option>
+                                                <option value="pkl">Prek Leap</option>
+                                                <option value="pvb">Preah Vihear</option>
+                                                <option value="cdb">Chamkar Daung</option>
+                                                <option value="rsb">Russey Keo</option>
+                                                <option value="mkb">Mondul Kiri</option>
+                                                <option value="prb">Prey veng</option>
+                                                <option value="omb">Oddar Meanchey</option>
+                                                <option value="svr">Svay Rieng</option>
+                                                <option value="bpb">Borey Peanichkam Battambang</option>
+                                                <option value="nbb">North Bridge</option>
+                                                <option value="akb">Angkor Arcade</option>
+                                                <option value="olp">Olympia</option>
+                                                <option value="vkb">Vithei Kampuchea Krom</option>
+                                                <option value="khp">Koh Pich</option>
+                                                <option value="atb">Tram Kak </option>
+                                                <option value="bkk">Boeng Keng Kang</option>
+                                                <option value="seb">Saen Sokh</option>
+                                                <option value="aem">AEON MEANCHEY</option>
+                                            </select>
+                                            <label>Pickup Branch
+                                                <div class="d-inline-flex required-d-card" style="color: #921d1d">*
+                                                </div>
+                                            </label>
+
+                                            <img src="/images/arrow-down.svg" alt="down" class="arrow-down me-4">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 p-2">
+                                        <!-- Secret Phase -->
+                                        <div class="inputbox ">
+                                            <svg class="position-absolute "
+                                                style="height: 20px;   top: 16px; bottom: 0px; left: 0px; padding-left: 18px;"
+                                                viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15 5H20V15H15V17C15 17.2652 15.1054 17.5196 15.2929 17.7071C15.4804 17.8946 15.7348 18 16 18H18V20H15.5C14.95 20 14 19.55 14 19C14 19.55 13.05 20 12.5 20H10V18H12C12.2652 18 12.5196 17.8946 12.7071 17.7071C12.8946 17.5196 13 17.2652 13 17V3C13 2.73478 12.8946 2.48043 12.7071 2.29289C12.5196 2.10536 12.2652 2 12 2H10V0H12.5C13.05 0 14 0.45 14 1C14 0.45 14.95 0 15.5 0H18V2H16C15.7348 2 15.4804 2.10536 15.2929 2.29289C15.1054 2.48043 15 2.73478 15 3V5ZM0 5H11V7H2V13H11V15H0V5ZM18 13V7H15V13H18ZM6.5 10C6.5 9.60218 6.34196 9.22064 6.06066 8.93934C5.77936 8.65804 5.39782 8.5 5 8.5C4.60218 8.5 4.22064 8.65804 3.93934 8.93934C3.65804 9.22064 3.5 9.60218 3.5 10C3.5 10.3978 3.65804 10.7794 3.93934 11.0607C4.22064 11.342 4.60218 11.5 5 11.5C5.39782 11.5 5.77936 11.342 6.06066 11.0607C6.34196 10.7794 6.5 10.3978 6.5 10ZM11 8.89C10.39 8.33 9.44 8.38 8.88 9C8.32 9.6 8.37 10.55 9 11.11C9.55 11.63 10.43 11.63 11 11.11V8.89Z"
+                                                    fill="url(#paint0_linear_624_196)" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_624_196" x1="0" y1="0"
+                                                        x2="19.4328" y2="20.5367" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#121B67" />
+                                                        <stop offset="0.554587" stop-color="#ED4055" />
+                                                        <stop offset="0.96845" stop-color="#EDD62C" />
+                                                        <stop offset="0.96855" stop-color="#EDDA2B" />
+                                                        <stop offset="0.96865" stop-color="#EDDE2A" />
+                                                        <stop offset="0.96875" stop-color="#EDE229" />
+                                                        <stop offset="0.9992" stop-color="#615E11" />
+                                                        <stop offset="0.9993" stop-color="#EDE927" />
+                                                        <stop offset="0.9994" stop-color="#EDEB27" />
+                                                        <stop offset="0.9995" stop-color="#EDEC26" />
+                                                        <stop offset="0.9996" stop-color="#EDEE26" />
+                                                        <stop offset="0.9997" stop-color="#EDF224" />
+                                                        <stop offset="0.9998" stop-color="#EDF623" />
+                                                        <stop offset="0.9999" stop-color="#EDFB22" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                        <stop offset="1" stop-color="#EDFF21" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                            <input style="border: none;" class="input" type="text" required />
+                                            <label class="">Secret Phase
+                                                <div class="d-inline-flex required-d-card" style="color: #921d1d;  ">*
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+
+                            <!-- Mobile banking checkbox-->
+                            <div class=" d-flex align-items-center my-4 mx-2">
+                                <!-- checkbox -->
+                                <label class="check-container d-flex align-items-center">
+                                    <input type="checkbox" checked="checked" id="checkMobileBankingApp">
+                                    <div class="checkmark"></div>
+                                    <label for="checkMobileBankingApp" class="mx-3 fs-6">Mobile Banking App</label>
+                                </label>
+
+                                <hr style="flex-grow: 1">
+                            </div>
+
+
+                            <div class=" container-fluid mx-0">
+                                <div class="row g-3 px-0 px-0">
+                                    <div class="col-12 col-md-6 px-0">
+                                        <!-- take a picture of NID/Passport section -->
+                                        <div class="mx-2">
+                                            <div style=" font-size: 12px">Take Picture of NID/Passport</div>
+                                            <label for="formFile"
+                                                class="mt-2 d-flex flex-column justify-content-center align-items-center p-5 rounded-3  "
+                                                style="border: 1px dashed #797979;">
+                                                <svg style="height: 28px;" viewBox="0 0 34 25" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.85 20.3125V20.8125H9.35H24.65H25.15V20.3125V19.1406C25.15 18.3545 24.7184 17.7147 24.1368 17.2213C23.5564 16.7289 22.7787 16.3379 21.9538 16.0346C20.303 15.4277 18.3319 15.125 17 15.125C15.6681 15.125 13.697 15.4277 12.0462 16.0346C11.2213 16.3379 10.4436 16.7289 9.86325 17.2213C9.2816 17.7147 8.85 18.3545 8.85 19.1406V20.3125ZM30.1 12.5C30.1 13.4757 30.5221 14.4019 31.2575 15.0778C31.8708 15.6416 32.6609 15.9943 33.5 16.0951V21.875C33.5 22.5569 33.2056 23.2204 32.6658 23.7166C32.1246 24.2141 31.3821 24.5 30.6 24.5H3.4C2.6179 24.5 1.87544 24.2141 1.33419 23.7166C0.794355 23.2204 0.5 22.5569 0.5 21.875V16.0953C2.39577 15.8686 3.9 14.3704 3.9 12.5C3.9 11.5243 3.47793 10.5981 2.74252 9.92216C2.12919 9.35844 1.33911 9.00566 0.5 8.90489V3.125C0.5 1.70718 1.76392 0.5 3.4 0.5H30.6C31.3821 0.5 32.1246 0.785948 32.6658 1.28342C33.2056 1.77959 33.5 2.44307 33.5 3.125V8.90489C32.6609 9.00566 31.8708 9.35844 31.2575 9.92216C30.5221 10.5981 30.1 11.5243 30.1 12.5ZM17 13.3906C18.1341 13.3906 19.2293 12.9769 20.043 12.229C20.8582 11.4799 21.325 10.4543 21.325 9.375C21.325 8.29573 20.8582 7.27014 20.043 6.52095C19.2293 5.77306 18.1341 5.35938 17 5.35938C15.8659 5.35938 14.7707 5.77306 13.957 6.52095C13.1418 7.27014 12.675 8.29573 12.675 9.375C12.675 10.4543 13.1418 11.4799 13.957 12.229C14.7707 12.9769 15.8659 13.3906 17 13.3906Z"
+                                                        fill="#1A1A1A" />
+                                                    <path
+                                                        d="M8.85 20.3125V20.8125H9.35H24.65H25.15V20.3125V19.1406C25.15 18.3545 24.7184 17.7147 24.1368 17.2213C23.5564 16.7289 22.7787 16.3379 21.9538 16.0346C20.303 15.4277 18.3319 15.125 17 15.125C15.6681 15.125 13.697 15.4277 12.0462 16.0346C11.2213 16.3379 10.4436 16.7289 9.86325 17.2213C9.2816 17.7147 8.85 18.3545 8.85 19.1406V20.3125ZM30.1 12.5C30.1 13.4757 30.5221 14.4019 31.2575 15.0778C31.8708 15.6416 32.6609 15.9943 33.5 16.0951V21.875C33.5 22.5569 33.2056 23.2204 32.6658 23.7166C32.1246 24.2141 31.3821 24.5 30.6 24.5H3.4C2.6179 24.5 1.87544 24.2141 1.33419 23.7166C0.794355 23.2204 0.5 22.5569 0.5 21.875V16.0953C2.39577 15.8686 3.9 14.3704 3.9 12.5C3.9 11.5243 3.47793 10.5981 2.74252 9.92216C2.12919 9.35844 1.33911 9.00566 0.5 8.90489V3.125C0.5 1.70718 1.76392 0.5 3.4 0.5H30.6C31.3821 0.5 32.1246 0.785948 32.6658 1.28342C33.2056 1.77959 33.5 2.44307 33.5 3.125V8.90489C32.6609 9.00566 31.8708 9.35844 31.2575 9.92216C30.5221 10.5981 30.1 11.5243 30.1 12.5ZM17 13.3906C18.1341 13.3906 19.2293 12.9769 20.043 12.229C20.8582 11.4799 21.325 10.4543 21.325 9.375C21.325 8.29573 20.8582 7.27014 20.043 6.52095C19.2293 5.77306 18.1341 5.35938 17 5.35938C15.8659 5.35938 14.7707 5.77306 13.957 6.52095C13.1418 7.27014 12.675 8.29573 12.675 9.375C12.675 10.4543 13.1418 11.4799 13.957 12.229C14.7707 12.9769 15.8659 13.3906 17 13.3906Z"
+                                                        fill="url(#paint0_radial_624_193)" />
+                                                    <path
+                                                        d="M8.85 20.3125V20.8125H9.35H24.65H25.15V20.3125V19.1406C25.15 18.3545 24.7184 17.7147 24.1368 17.2213C23.5564 16.7289 22.7787 16.3379 21.9538 16.0346C20.303 15.4277 18.3319 15.125 17 15.125C15.6681 15.125 13.697 15.4277 12.0462 16.0346C11.2213 16.3379 10.4436 16.7289 9.86325 17.2213C9.2816 17.7147 8.85 18.3545 8.85 19.1406V20.3125ZM30.1 12.5C30.1 13.4757 30.5221 14.4019 31.2575 15.0778C31.8708 15.6416 32.6609 15.9943 33.5 16.0951V21.875C33.5 22.5569 33.2056 23.2204 32.6658 23.7166C32.1246 24.2141 31.3821 24.5 30.6 24.5H3.4C2.6179 24.5 1.87544 24.2141 1.33419 23.7166C0.794355 23.2204 0.5 22.5569 0.5 21.875V16.0953C2.39577 15.8686 3.9 14.3704 3.9 12.5C3.9 11.5243 3.47793 10.5981 2.74252 9.92216C2.12919 9.35844 1.33911 9.00566 0.5 8.90489V3.125C0.5 1.70718 1.76392 0.5 3.4 0.5H30.6C31.3821 0.5 32.1246 0.785948 32.6658 1.28342C33.2056 1.77959 33.5 2.44307 33.5 3.125V8.90489C32.6609 9.00566 31.8708 9.35844 31.2575 9.92216C30.5221 10.5981 30.1 11.5243 30.1 12.5ZM17 13.3906C18.1341 13.3906 19.2293 12.9769 20.043 12.229C20.8582 11.4799 21.325 10.4543 21.325 9.375C21.325 8.29573 20.8582 7.27014 20.043 6.52095C19.2293 5.77306 18.1341 5.35938 17 5.35938C15.8659 5.35938 14.7707 5.77306 13.957 6.52095C13.1418 7.27014 12.675 8.29573 12.675 9.375C12.675 10.4543 13.1418 11.4799 13.957 12.229C14.7707 12.9769 15.8659 13.3906 17 13.3906Z"
+                                                        stroke="black" />
+                                                    <path
+                                                        d="M8.85 20.3125V20.8125H9.35H24.65H25.15V20.3125V19.1406C25.15 18.3545 24.7184 17.7147 24.1368 17.2213C23.5564 16.7289 22.7787 16.3379 21.9538 16.0346C20.303 15.4277 18.3319 15.125 17 15.125C15.6681 15.125 13.697 15.4277 12.0462 16.0346C11.2213 16.3379 10.4436 16.7289 9.86325 17.2213C9.2816 17.7147 8.85 18.3545 8.85 19.1406V20.3125ZM30.1 12.5C30.1 13.4757 30.5221 14.4019 31.2575 15.0778C31.8708 15.6416 32.6609 15.9943 33.5 16.0951V21.875C33.5 22.5569 33.2056 23.2204 32.6658 23.7166C32.1246 24.2141 31.3821 24.5 30.6 24.5H3.4C2.6179 24.5 1.87544 24.2141 1.33419 23.7166C0.794355 23.2204 0.5 22.5569 0.5 21.875V16.0953C2.39577 15.8686 3.9 14.3704 3.9 12.5C3.9 11.5243 3.47793 10.5981 2.74252 9.92216C2.12919 9.35844 1.33911 9.00566 0.5 8.90489V3.125C0.5 1.70718 1.76392 0.5 3.4 0.5H30.6C31.3821 0.5 32.1246 0.785948 32.6658 1.28342C33.2056 1.77959 33.5 2.44307 33.5 3.125V8.90489C32.6609 9.00566 31.8708 9.35844 31.2575 9.92216C30.5221 10.5981 30.1 11.5243 30.1 12.5ZM17 13.3906C18.1341 13.3906 19.2293 12.9769 20.043 12.229C20.8582 11.4799 21.325 10.4543 21.325 9.375C21.325 8.29573 20.8582 7.27014 20.043 6.52095C19.2293 5.77306 18.1341 5.35938 17 5.35938C15.8659 5.35938 14.7707 5.77306 13.957 6.52095C13.1418 7.27014 12.675 8.29573 12.675 9.375C12.675 10.4543 13.1418 11.4799 13.957 12.229C14.7707 12.9769 15.8659 13.3906 17 13.3906Z"
+                                                        stroke="url(#paint1_radial_624_193)" />
+                                                    <defs>
+                                                        <radialGradient id="paint0_radial_624_193" cx="0" cy="0" r="1"
+                                                            gradientUnits="userSpaceOnUse"
+                                                            gradientTransform="translate(26.4866 7.70833) rotate(16.2265) scale(27.5855 34.3393)">
+                                                            <stop stop-color="#121B67" />
+                                                            <stop offset="0.635422" stop-color="#ED4055" />
+                                                            <stop offset="0.96845" stop-color="#EDD62C" />
+                                                            <stop offset="0.96855" stop-color="#EDDA2B" />
+                                                            <stop offset="0.96865" stop-color="#EDDE2A" />
+                                                            <stop offset="0.96875" stop-color="#EDE229" />
+                                                            <stop offset="0.9992" stop-color="#615E11" />
+                                                            <stop offset="0.9993" stop-color="#EDE927" />
+                                                            <stop offset="0.9994" stop-color="#EDEB27" />
+                                                            <stop offset="0.9995" stop-color="#EDEC26" />
+                                                            <stop offset="0.9996" stop-color="#EDEE26" />
+                                                            <stop offset="0.9997" stop-color="#EDF224" />
+                                                            <stop offset="0.9998" stop-color="#EDF623" />
+                                                            <stop offset="0.9999" stop-color="#EDFB22" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                        </radialGradient>
+                                                        <radialGradient id="paint1_radial_624_193" cx="0" cy="0" r="1"
+                                                            gradientUnits="userSpaceOnUse"
+                                                            gradientTransform="translate(26.4866 7.70833) rotate(16.2265) scale(27.5855 34.3393)">
+                                                            <stop stop-color="#121B67" />
+                                                            <stop offset="0.635422" stop-color="#ED4055" />
+                                                            <stop offset="0.96845" stop-color="#EDD62C" />
+                                                            <stop offset="0.96855" stop-color="#EDDA2B" />
+                                                            <stop offset="0.96865" stop-color="#EDDE2A" />
+                                                            <stop offset="0.96875" stop-color="#EDE229" />
+                                                            <stop offset="0.9992" stop-color="#615E11" />
+                                                            <stop offset="0.9993" stop-color="#EDE927" />
+                                                            <stop offset="0.9994" stop-color="#EDEB27" />
+                                                            <stop offset="0.9995" stop-color="#EDEC26" />
+                                                            <stop offset="0.9996" stop-color="#EDEE26" />
+                                                            <stop offset="0.9997" stop-color="#EDF224" />
+                                                            <stop offset="0.9998" stop-color="#EDF623" />
+                                                            <stop offset="0.9999" stop-color="#EDFB22" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                        </radialGradient>
+                                                    </defs>
+                                                </svg>
+
+                                                <label class="pt-2 text-center"
+                                                    style=" font-size: 14px; color: #797979;" for="formFile">Please
+                                                    click here to
+                                                    take <br> picture of NID/Passport</label>
+                                                <input class="form-control" type="file" id="formFile"
+                                                    accept=".png, .jpg, .jpeg" name="fileName">
+
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class=" col-12 col-md-6 px-0">
+                                        <!-- take a picture section -->
+                                        <div class="mx-2">
+                                            <div style=" font-size: 12px">Take Photo</div>
+                                            <label for="formFile"
+                                                class="mt-2 d-flex flex-column justify-content-center align-items-center p-5 rounded-3  "
+                                                style="border: 1px dashed #797979;">
+                                                <svg style="height: 28px;" viewBox="0 0 33 29" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2 9.8125C2 8.9837 2.33569 8.18884 2.93322 7.60279C3.53074 7.01674 4.34117 6.6875 5.1862 6.6875H6.66778C7.1922 6.68758 7.70854 6.56069 8.17097 6.31811C8.63341 6.07552 9.02764 5.72474 9.3187 5.29688L10.6123 3.39062C10.9033 2.96276 11.2976 2.61198 11.76 2.36939C12.2225 2.12681 12.7388 1.99992 13.2632 2H19.4126C19.937 1.99992 20.4533 2.12681 20.9158 2.36939C21.3782 2.61198 21.7724 2.96276 22.0635 3.39062L23.3571 5.29688C23.6481 5.72474 24.0424 6.07552 24.5048 6.31811C24.9672 6.56069 25.4836 6.68758 26.008 6.6875H27.4896C28.3346 6.6875 29.145 7.01674 29.7426 7.60279C30.3401 8.18884 30.6758 8.9837 30.6758 9.8125V23.875C30.6758 24.7038 30.3401 25.4987 29.7426 26.0847C29.145 26.6708 28.3346 27 27.4896 27H5.1862C4.34117 27 3.53074 26.6708 2.93322 26.0847C2.33569 25.4987 2 24.7038 2 23.875V9.8125Z"
+                                                        stroke="#1A1A1A" stroke-width="3" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M2 9.8125C2 8.9837 2.33569 8.18884 2.93322 7.60279C3.53074 7.01674 4.34117 6.6875 5.1862 6.6875H6.66778C7.1922 6.68758 7.70854 6.56069 8.17097 6.31811C8.63341 6.07552 9.02764 5.72474 9.3187 5.29688L10.6123 3.39062C10.9033 2.96276 11.2976 2.61198 11.76 2.36939C12.2225 2.12681 12.7388 1.99992 13.2632 2H19.4126C19.937 1.99992 20.4533 2.12681 20.9158 2.36939C21.3782 2.61198 21.7724 2.96276 22.0635 3.39062L23.3571 5.29688C23.6481 5.72474 24.0424 6.07552 24.5048 6.31811C24.9672 6.56069 25.4836 6.68758 26.008 6.6875H27.4896C28.3346 6.6875 29.145 7.01674 29.7426 7.60279C30.3401 8.18884 30.6758 8.9837 30.6758 9.8125V23.875C30.6758 24.7038 30.3401 25.4987 29.7426 26.0847C29.145 26.6708 28.3346 27 27.4896 27H5.1862C4.34117 27 3.53074 26.6708 2.93322 26.0847C2.33569 25.4987 2 24.7038 2 23.875V9.8125Z"
+                                                        stroke="url(#paint0_radial_624_189)" stroke-width="3"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path
+                                                        d="M21.1143 16.0703C21.1143 17.3135 20.6107 18.5058 19.7144 19.3849C18.8181 20.264 17.6025 20.7578 16.335 20.7578C15.0674 20.7578 13.8518 20.264 12.9555 19.3849C12.0592 18.5058 11.5557 17.3135 11.5557 16.0703C11.5557 14.8271 12.0592 13.6348 12.9555 12.7557C13.8518 11.8767 15.0674 11.3828 16.335 11.3828C17.6025 11.3828 18.8181 11.8767 19.7144 12.7557C20.6107 13.6348 21.1143 14.8271 21.1143 16.0703Z"
+                                                        stroke="#1A1A1A" stroke-width="3" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M21.1143 16.0703C21.1143 17.3135 20.6107 18.5058 19.7144 19.3849C18.8181 20.264 17.6025 20.7578 16.335 20.7578C15.0674 20.7578 13.8518 20.264 12.9555 19.3849C12.0592 18.5058 11.5557 17.3135 11.5557 16.0703C11.5557 14.8271 12.0592 13.6348 12.9555 12.7557C13.8518 11.8767 15.0674 11.3828 16.335 11.3828C17.6025 11.3828 18.8181 11.8767 19.7144 12.7557C20.6107 13.6348 21.1143 14.8271 21.1143 16.0703Z"
+                                                        stroke="url(#paint1_radial_624_189)" stroke-width="3"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <defs>
+                                                        <radialGradient id="paint0_radial_624_189" cx="0" cy="0" r="1"
+                                                            gradientUnits="userSpaceOnUse"
+                                                            gradientTransform="translate(24.3389 9.70833) rotate(19.0376) scale(23.6315 33.8079)">
+                                                            <stop stop-color="#121B67" />
+                                                            <stop offset="0.635422" stop-color="#ED4055" />
+                                                            <stop offset="0.96845" stop-color="#EDD62C" />
+                                                            <stop offset="0.96855" stop-color="#EDDA2B" />
+                                                            <stop offset="0.96865" stop-color="#EDDE2A" />
+                                                            <stop offset="0.96875" stop-color="#EDE229" />
+                                                            <stop offset="0.9992" stop-color="#615E11" />
+                                                            <stop offset="0.9993" stop-color="#EDE927" />
+                                                            <stop offset="0.9994" stop-color="#EDEB27" />
+                                                            <stop offset="0.9995" stop-color="#EDEC26" />
+                                                            <stop offset="0.9996" stop-color="#EDEE26" />
+                                                            <stop offset="0.9997" stop-color="#EDF224" />
+                                                            <stop offset="0.9998" stop-color="#EDF623" />
+                                                            <stop offset="0.9999" stop-color="#EDFB22" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                        </radialGradient>
+                                                        <radialGradient id="paint1_radial_624_189" cx="0" cy="0" r="1"
+                                                            gradientUnits="userSpaceOnUse"
+                                                            gradientTransform="translate(19.002 14.2734) rotate(21.216) scale(7.9877 12.5025)">
+                                                            <stop stop-color="#121B67" />
+                                                            <stop offset="0.635422" stop-color="#ED4055" />
+                                                            <stop offset="0.96845" stop-color="#EDD62C" />
+                                                            <stop offset="0.96855" stop-color="#EDDA2B" />
+                                                            <stop offset="0.96865" stop-color="#EDDE2A" />
+                                                            <stop offset="0.96875" stop-color="#EDE229" />
+                                                            <stop offset="0.9992" stop-color="#615E11" />
+                                                            <stop offset="0.9993" stop-color="#EDE927" />
+                                                            <stop offset="0.9994" stop-color="#EDEB27" />
+                                                            <stop offset="0.9995" stop-color="#EDEC26" />
+                                                            <stop offset="0.9996" stop-color="#EDEE26" />
+                                                            <stop offset="0.9997" stop-color="#EDF224" />
+                                                            <stop offset="0.9998" stop-color="#EDF623" />
+                                                            <stop offset="0.9999" stop-color="#EDFB22" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                            <stop offset="1" stop-color="#EDFF21" />
+                                                        </radialGradient>
+                                                    </defs>
+                                                </svg>
+
+                                                <label class="pt-2 text-center"
+                                                    style=" font-size: 14px; color: #797979;" for="formFile">Please
+                                                    click here to <br>
+                                                    take picture</label>
+                                                <input class="form-control" type="file" id="formFile"
+                                                    accept=".png, .jpg, .jpeg" name="fileName">
+
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- start staff referral -->
+                <div class="mt-4 fs-5">Staff Referral</div>
+                <div class=" pt-1" style="color: #797979; font-size: 14px;">Please input Staff ID</div>
+
+                <!-- input field: Staff  ID -->
+                <div class="inputbox bg-white mt-3 d-flex align-items-center" style=" border: 1px solid #797979; ">
+
+                    <svg class="position-absolute "
+                        style="height: 32px; width: 32px; top: 10px; bottom: 0px; left: 0px; padding-left: 18px;"
+                        viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.145 5.2801C12.145 6.27229 11.7334 7.22384 11.0006 7.92542C10.2679 8.627 9.27412 9.02115 8.23788 9.02115C7.20164 9.02115 6.20785 8.627 5.47512 7.92542C4.74239 7.22384 4.33074 6.27229 4.33074 5.2801C4.33074 4.28792 4.74239 3.33637 5.47512 2.63479C6.20785 1.93321 7.20164 1.53906 8.23788 1.53906C9.27412 1.53906 10.2679 1.93321 11.0006 2.63479C11.7334 3.33637 12.145 4.28792 12.145 5.2801ZM8.23788 11.8269C6.42446 11.8269 4.68532 12.5167 3.40304 13.7444C2.12077 14.9722 1.40039 16.6374 1.40039 18.3738H15.0754C15.0754 16.6374 14.355 14.9722 13.0727 13.7444C11.7904 12.5167 10.0513 11.8269 8.23788 11.8269Z"
+                            stroke="url(#paint0_radial_213_375)" stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <defs>
+                            <radialGradient id="paint0_radial_213_375" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(12.0534 6.72976) rotate(25.9776) scale(11.8504 21.6498)">
+                                <stop stop-color="#121B67" />
+                                <stop offset="0.635422" stop-color="#ED4055" />
+                                <stop offset="0.96845" stop-color="#EDD62C" />
+                                <stop offset="0.96855" stop-color="#EDDA2B" />
+                                <stop offset="0.96865" stop-color="#EDDE2A" />
+                                <stop offset="0.96875" stop-color="#EDE229" />
+                                <stop offset="0.9992" stop-color="#615E11" />
+                                <stop offset="0.9993" stop-color="#EDE927" />
+                                <stop offset="0.9994" stop-color="#EDEB27" />
+                                <stop offset="0.9995" stop-color="#EDEC26" />
+                                <stop offset="0.9996" stop-color="#EDEE26" />
+                                <stop offset="0.9997" stop-color="#EDF224" />
+                                <stop offset="0.9998" stop-color="#EDF623" />
+                                <stop offset="0.9999" stop-color="#EDFB22" />
+                                <stop offset="1" stop-color="#EDFF21" />
+                                <stop offset="1" stop-color="#EDFF21" />
+                                <stop offset="1" stop-color="#EDFF21" />
+                                <stop offset="1" stop-color="#EDFF21" />
+                                <stop offset="1" stop-color="#EDFF21" />
+                                <stop offset="1" stop-color="#EDFF21" />
+                            </radialGradient>
+                        </defs>
+                    </svg>
+
+                    <select style="border: none; height: 100%;  width: 100%;" class="input js-selector" name="staffID"
+                        required>
+                        <option value=""></option>
+
+                    </select>
+                    <label>Staff ID
+                        <div class="d-inline-flex" style="color: #921d1d">*</div>
+                    </label>
+                    <img src="/images/arrow-down.svg" alt="down" class="arrow-down me-4">
+
+                </div>
+
+                <!-- button -->
+                <div class="mt-5 mb-2 d-flex align-items-center justify-content-between">
+                    <button
+                        style=" border: transparent; background-image: url('../images/bg-button.png'); background-position: left; background-repeat: no-repeat; background-size: cover; font-size: 13px;"
+                        class=" btn  button-back rounded-3   text-white"><a
+                            style=" text-decoration: none; color: white;" href="/templates/customer-type.html">Back
+                            Home</a>
+                    </button>
+                    <button
+                        style="border: transparent; background-image: url('../images/bg-button.png'); background-position: left; background-repeat: no-repeat; background-size: cover; font-size: 13px;"
+                        class=" btn button-continue rounded-3   text-white"><a
+                            style=" text-decoration: none; color: white;" href="#">Submit</a> </button>
+                </div>
+            </div>
+            <!-- end customer form -->
+
+        </div>
+
+    </body>
+
+    <script type="text/javascript">
+        var maleBtn = document.getElementById('male-btn');
+        var femaleBtn = document.getElementById('female-btn');
+        function femaleClick() {
+            maleBtn.classList.remove("active");
+            femaleBtn.classList.add("active");
+        }
+
+        function maleClick() {
+            femaleBtn.classList.remove("active");
+            maleBtn.classList.add("active");
+        }
+
+        $(document).ready(function () {
+            const checkbox = $("#checkDebitCard");
+            $('.required-d-card').addClass("d-none");
+
+            checkbox.on("change", () => {
+                const isCheck = checkbox.is(":checked");
+
+
+                $('.required-d-card').parent().parent().find("select.js-selector").each((idx, value) => {
+                    $(value).prop("required", isCheck);
+                });
+
+                if (!isCheck) {
+                    $('.required-d-card').addClass("d-none");
+                    $('.required-d-card').removeClass("d-block");
+                } else {
+
+                    $('.required-d-card').addClass("d-block");
+                    $('.required-d-card').removeClass("d-none");
+
+                }
+            });
+
+
+            $('#formFile').change(function () {
+                $(this).prev('label').clone();
+                $(this).prev('#imageName').clone();
+                var file = $('#formFile')[0].files[0].name;
+                console.log("file", $('#formFile')[0].files[0]);
+                $(this).prev('label').text(file);
+                $(this).prev('#imageName').text(file);
+            });
+            // selector library global
+            $('.js-selector').select2();
+            // datepicker
+            $('#datepicker').datepicker();
+
+            //add more account
+            $('#add-acc').on("click", () => {
+                let n_child = $(".acc-container").children(".container-fluid").length;
+                //active selector library after click
+
+                let acc_template = `<div class="container-fluid">
+                    <div class=" row">
+                        <div class="col-10 col-sm-11 p-2">
+                            <div class="inputbox bg-white mt-3 d-flex align-items-center "
+                                style=" border: 1px solid #797979; ">
+                                <img class="position-absolute" src="/images/profile.svg" style="height: 15px; top: 19px; bottom: 0px; left: 0px; padding-left: 18px;" />
+                                <select style="border: none; height: 100%;  width: 80%;"
+                                    class="input js-selector">
+                                    <option value="Saving Account">Saving Account</option>
+                                    <option value="Current Account">Current Account</option>
+                                    <option value="RGC Payroll Account">RGC Payroll Account</option>
+                                    <option value="Elite Account">Elite Account</option>
+                                </select>
+                                <label>Account Types
+                                    <div class="d-inline-flex" style="color: #921d1d">*</div>
+                                </label>
+    
+                                <div class=" d-flex" style="  border-left: 1px solid #797979;  ">
+                                    <select class=" js-selector "
+                                        style=" width: 100%;  outline: none;  height: 30px;    border-left: 1px solid #797979 !important;  ">
+                                        <option value="USD" selected>USD</option>
+                                        <option value="KHR">KHR</option>
+                                    </select>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="col-2 col-sm-1 p-2 mt-2 d-flex justify-content-end">
+                            <img src="/images/minus.svg" id="remove-acc-${n_child + 1}" alt="minus" width="30"
+                                style="margin-top: 10px">
+                        </div>
+                    </div>
+                </div>`;
+
+                if (n_child < 7) {
+                    $(".acc-container").append(acc_template);
+                }
+
+                $('.js-selector').select2();
+
+
+                $(`#remove-acc-${n_child + 1}`).click(() => {
+                    $(`#remove-acc-${n_child + 1}`).closest(".container-fluid").remove();
+                });
+            });
+        })
+
+
+    </script>
+
+    <style>
+        .gender-label {
+            font-size: 13px;
+            text-align: start;
+            color: #5a5a5a;
+        }
+
+        .button-box {
+            position: relative;
+            width: 100%;
+        }
+
+        .toggle-btn {
+            padding: 8px 40px;
+            cursor: pointer;
+            background: #DBDBDB;
+            border: 0;
+            outline: none;
+            position: relative;
+            text-align: center;
+            border-radius: 3px;
+            font-size: 14px;
+            width: 48%;
+            color: #313131;
+
+        }
+
+        .active {
+            padding: 8px 40px;
+            cursor: pointer;
+            border: 0;
+            outline: none;
+            position: relative;
+            text-align: center;
+            border-radius: 3px;
+            color: white;
+            background: linear-gradient(139.4deg, #121B67 0%, #ED4055 60.42%, #EDD62C 97.26%, #EDDA2B 105.51%, #EDDE2A 105.52%, #EDE229 105.53%, #615E11 108.85%, #EDE927 108.86%, #EDEB27 108.87%, #EDEC26 108.88%, #EDEE26 108.89%, #EDF224 108.9%, #EDF623 108.92%, #EDFB22 108.93%, #EDFF21 108.94%, #EDFF21 108.94%, #EDFF21 108.94%, #EDFF21 108.94%, #EDFF21 108.94%, #EDFF21 108.94%);
+        }
+
+        .select2 {
+            border: none !important;
+        }
+
+        .select2-container--default .select2-selection--single {
+            border: 0px solid #fff;
+            border-radius: 0px;
+            margin-left: 50px;
+        }
+
+        .select2-selection__arrow {
+            display: none;
+        }
+
+        .select2-container--open .select2-dropdown {
+            left: 50px;
+        }
+
+        .select2 .select2-container .select2-container--default .select2-container--below .select2-container--open .select2-container--focus {
+            width: 100%;
+        }
+
+
+
+        .select2-container .select2-selection--single .select2-selection__rendered {
+            padding-top: 2px;
+            padding-left: 0px;
+            width: 100%;
+        }
+
+        body {
+            padding: 50px;
+        }
+
+
+        .wrap-container {
+            background: #F5F5F5;
+            opacity: 0.8;
+            padding: 50px;
+            border-radius: 20px;
+        }
+
+        .form-title {
+            font-size: 22px;
+            line-height: 35px;
+        }
+
+        .arrow-icon {
+            width: 38px;
+            margin-right: 20px;
+            margin-top: 7px;
+        }
+
+        .info-container {
+            padding: 0 80px
+        }
+
+        .canadia-logo {
+            height: 80px
+        }
+
+        .form-section {
+            font-size: 20px;
+            margin-top: 18px;
+        }
+
+        .button-back,
+        .button-continue {
+            padding: 14px 30px;
+        }
+
+        @media screen and (max-width: 1280px) {
+            .arrow-down {
+                margin-left: 0 !important;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            body {
+                padding: 20px;
+            }
+
+            .wrap-container {
+                padding: 20px;
+                border-radius: 10px;
+            }
+
+            .form-title {
+                font-size: 18px;
+                line-height: 27px;
+            }
+
+            .arrow-icon {
+                width: 25px;
+                margin-right: 20px;
+                margin-top: 5px;
+            }
+
+            .info-container {
+                padding: 0;
+            }
+
+            .canadia-logo {
+                height: 90px
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            body {
+                padding: 10px;
+            }
+
+            .wrap-container {
+                padding: 10px;
+            }
+
+            .form-title {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            .canadia-logo {
+                height: 50px
+            }
+        }
+    </style>
+
+</html>
