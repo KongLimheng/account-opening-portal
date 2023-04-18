@@ -1,0 +1,192 @@
+body {
+    /* margin: 0; */
+    padding: 50px;
+    box-sizing: border-box; 
+}
+
+@font-face {
+    font-family: 'Eina01-SemiBold';
+    src: url('/font/Eina01-SemiBold.ttf');
+    font-style: normal;
+}
+
+.background-gradient {
+    background-repeat: no-repeat;
+    background-color: hsla(341, 100%, 50%, 1);
+    background-image:
+        radial-gradient(at 92% 89%, hsla(243, 54%, 25%, 1) 0px, transparent 50%),
+        radial-gradient(at 10% 14%, hsla(48, 95%, 75%, 1) 0px, transparent 50%);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    /* padding: 40px; */
+}
+
+.content{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    border-radius: 20px;
+    /* padding: 40px; */
+}
+
+.logo-hit-n img {
+   width: 200px;
+}
+
+.content-letter {
+    line-height: 60px;
+}
+
+.text-letter-n {
+    font-size: 14px;
+    color: #5e5e5e;
+    line-height: 60px;
+    text-align: center;
+}
+
+.congrat {
+    background: linear-gradient(122.05deg, #121B67 0%, #ED4055 66.31%, #EDD62C 115.79%, #EDDA2B 115.8%, #EDDE2A 115.81%, #EDE229 115.83%, #615E11 119.47%, #EDE927 119.48%, #EDEB27 119.49%, #EDEC26 119.5%, #EDEE26 119.51%, #EDF224 119.53%, #EDF623 119.54%, #EDFB22 119.55%, #EDFF21 119.56%, #EDFF21 119.56%, #EDFF21 119.56%, #EDFF21 119.56%, #EDFF21 119.56%, #EDFF21 119.56%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 25px;
+}
+
+.button-continue {
+    line-height: 200px;
+    /* width: 100%; */
+}
+
+.button-image {
+    width: 50%; 
+    height: 60px;
+}
+
+.deposit-btn {
+    /* border: none; */
+    outline: none;
+    width: 70%;
+    height: 52px;
+    padding: 10px 0;
+    background: linear-gradient(122.05deg,
+            #121b67 0%,
+            #ed4055 66.31%,
+            #edd62c 115.79%,
+            #edda2b 115.8%,
+            #edde2a 115.81%,
+            #ede229 115.83%,
+            #615e11 119.47%,
+            #ede927 119.48%,
+            #edeb27 119.49%,
+            #edec26 119.5%,
+            #edee26 119.51%,
+            #edf224 119.53%,
+            #edf623 119.54%,
+            #edfb22 119.55%,
+            #edff21 119.56%,
+            #edff21 119.56%,
+            #edff21 119.56%,
+            #edff21 119.56%,
+            #edff21 119.56%,
+            #edff21 119.56%);
+}
+
+
+
+
+
+/* responsive */
+
+/* smart phone */
+@media screen and (max-width: 767px) {
+    .text-letter-n {
+        font-size: 12.2px;
+        text-align: center;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .f-full {
+        /* margin-top: 100px; */
+        padding: 170px;
+    }
+
+    .content{
+        padding: 20px;
+        font-size: 70px;
+    }
+
+    .logo-hit-n img {
+        width: 300px;
+        height: 100%;
+    }
+
+    .text-letter-n {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .button-image {
+        width: 85%; 
+        height: 60px;
+    }
+
+    .congrat {
+        font-size: 30px;
+    }
+}
+
+/* desktop */
+/* @media screen and (min-width: 1024px) and (max-width: 1500px) {
+
+    .f-full {
+        margin-top: 10px;
+    }
+
+    .content{
+        padding: 50px;
+    }
+     
+    .logo-hit-n img {
+        width: 400px;
+        height: 100%;
+     }
+
+    .text-letter-n {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .congrat {
+        font-size: 40px;
+    }
+
+    .button-image {
+        width: 85%; 
+        height: 70px;
+    }
+
+} */
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (min-width: 575.98px) {}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (min-width: 767.98px) {}
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (min-width: 991.98px) {}
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (min-width: 1199.98px) {}
+
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 500px) {
+
+}
