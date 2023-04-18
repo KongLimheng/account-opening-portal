@@ -20,6 +20,34 @@ body {
     margin: 0;
 }
 
+/* custom .datepicker style */
+
+.datepicker table tr td.active.active {
+    background: linear-gradient(
+        139.4deg,
+        #121b67 0%,
+        #ed4055 60.42%,
+        #edd62c 97.26%,
+        #edda2b 105.51%,
+        #edde2a 105.52%,
+        #ede229 105.53%,
+        #615e11 108.85%,
+        #ede927 108.86%,
+        #edeb27 108.87%,
+        #edec26 108.88%,
+        #edee26 108.89%,
+        #edf224 108.9%,
+        #edf623 108.92%,
+        #edfb22 108.93%,
+        #edff21 108.94%,
+        #edff21 108.94%,
+        #edff21 108.94%,
+        #edff21 108.94%,
+        #edff21 108.94%,
+        #edff21 108.94%
+    );
+}
+
 .background-gradient {
     background-repeat: no-repeat;
     background-color: hsla(341, 100%, 50%, 1);
