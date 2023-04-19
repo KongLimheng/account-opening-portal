@@ -30,7 +30,7 @@
     </head>
 
     <body class="form-background">
-        <div class="wrap-container" style="font-family: 'Eina01-Semibold', sans-serif;">
+        <div class="wrap-container" style="font-family: 'Eina01-Semibold', sans-serif">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="d-inline-flex">
                     <!-- Arrow Icon -->
@@ -595,6 +595,9 @@
                                                 <option value="yearly">
                                                     Yearly
                                                 </option>
+                                                <option value="wave">
+                                                    Wave
+                                                </option>
                                             </select>
                                             <label>Fee Charge
                                                 <div class="d-inline-flex required-d-card" style="color: #921d1d">
@@ -929,15 +932,17 @@
                                         <!-- take a picture of NID/Passport section -->
                                         <div class="mx-2">
                                             <div style="font-size: 12px">
-                                                Take Picture of NID/Passport <div class="d-inline-flex"
-                                                    style="color: #921d1d">*</div>
+                                                Take Picture of NID/Passport
+                                                <div class="d-inline-flex" style="color: #921d1d">
+                                                    *
+                                                </div>
                                             </div>
                                             <label for="formFile"
                                                 class="mt-2 d-flex flex-column justify-content-center align-items-center p-5 rounded-3"
                                                 style="
                                                     border: 1px dashed #797979;
                                                 ">
-                                                <img src="/images/empty-img.svg" alt="empty-img" height="28">
+                                                <img src="/images/empty-img.svg" alt="empty-img" height="28" />
 
                                                 <label class="pt-2 text-center" style="
                                                         font-size: 14px;
@@ -954,21 +959,25 @@
                                     <div class="col-12 col-md-6 px-0">
                                         <!-- take a picture section -->
                                         <div class="mx-2">
-                                            <div style="font-size: 12px">Take Photo
-                                                <div class="d-inline-flex" style="color: #921d1d">*</div>
+                                            <div style="font-size: 12px">
+                                                Take Photo
+                                                <div class="d-inline-flex" style="color: #921d1d">
+                                                    *
+                                                </div>
                                             </div>
                                             <label for="formFile"
                                                 class="mt-2 d-flex flex-column justify-content-center align-items-center p-5 rounded-3"
                                                 style="
                                                     border: 1px dashed #797979;
                                                 ">
-                                                <img src="/images/camera.svg" alt="camera" height="28">
+                                                <img src="/images/camera.svg" alt="camera" height="28" />
 
                                                 <label class="pt-2 text-center" style="
                                                         font-size: 14px;
                                                         color: #797979;
                                                     " for="formFile">Please click here to <br />
-                                                    take picture </label>
+                                                    take picture
+                                                </label>
                                                 <input class="form-control" type="file" id="formFile"
                                                     accept=".png, .jpg, .jpeg" name="fileName" required />
                                             </label>
@@ -1085,8 +1094,7 @@
         $(document).ready(function () {
             const checkbox = $('#checkDebitCard');
             $('.required-d-card').addClass('d-none');
-            $(".block-debit").hide();
-
+            $('.block-debit').hide();
 
             checkbox.on('change', () => {
                 const isCheck = checkbox.is(':checked');
@@ -1102,12 +1110,11 @@
                 if (!isCheck) {
                     $('.required-d-card').addClass('d-none');
                     $('.required-d-card').removeClass('d-block');
-                    $(".block-debit").hide();
+                    $('.block-debit').hide();
                 } else {
                     $('.required-d-card').addClass('d-block');
                     $('.required-d-card').removeClass('d-none');
-                    $(".block-debit").show();
-
+                    $('.block-debit').show();
                 }
             });
 
@@ -1118,8 +1125,6 @@
                 console.log('file', $('#formFile')[0].files[0]);
                 $(this).prev('label').text(file);
                 $(this).prev('#imageName').text(file);
-
-
             });
 
             // selector library global
